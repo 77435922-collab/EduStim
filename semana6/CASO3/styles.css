@@ -1,0 +1,25 @@
+.carousel{
+    position: relative;
+    width: 600px;
+    margin: auto;
+}
+.carousel img{
+    width: 100%;
+    border-radius: 10px;
+}
+.controls{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.controls button{
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}

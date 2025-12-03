@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduStim</title>
     <link rel="stylesheet" href="css/Psicologiastyles.css">
+    <link rel="icon" type="image/jpg" href="img/logo.png">
 </head>
 <body>
     <header>
@@ -12,31 +13,75 @@
             <img id="logo" src="img/logo1.png">
             <nav>
                 <a href="EduStim.html" class="nav-link">Inicio</a>
-                <a href="nosotros.html" class="nav-link">Nosotros</a>
-                <a href="" class="nav-link">Contacto</a>
+                <a href="actividades.html" class="nav-link">Actividades</a>
+                <a href="recursos.html" class="nav-link">Recursos</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
             </nav>          
         </div>
     </header>
+    <div class="card">
+        <h2 id="titulo"></h2>
+    </div>
+
     <section class="seccion">
         <h2>Psicología Infantil:</h2>
         <p>
-            La psicología infantil se enfoca en acompañar el desarrollo emocional, social y conductual de los niños desde edades<br>
-            tempranas. Su objetivo es ayudarles a comprender y expresar sus sentimientos, fortalecer su autoestima y mejorar la<br>
-            manera en que se relacionan con su familia, sus compañeros y su entorno cercano.<br>
-
-            Este servicio brinda apoyo a niños que pueden presentar dificultades para comunicarse, adaptarse a cambios,<br>
-            controlar sus emociones o resolver situaciones de estrés. A través de estrategias adecuadas para su edad, se les guía<br>
-            para reconocer lo que sienten, desarrollar habilidades sociales y manejar mejor sus comportamientos.<br>
-
-            Además, la psicología infantil trabaja de la mano con los padres o cuidadores, ofreciendo orientación para que puedan<br> 
-            comprender las necesidades del niño y acompañarlo con estrategias que favorezcan un ambiente familiar más seguro<br> 
-            y comprensivo. Con este apoyo conjunto, se busca promover un crecimiento sano y equilibrado que beneficie su<br> 
-            bienestar general tanto en casa como en la escuela.
+            Ayudamos a que los niños crezcan seguros, felices y emocionalmente fuertes. En psicología infantil trabajamos sus emociones, conducta y habilidades sociales, utilizando estrategias adecuadas a su edad. También brindamos orientación a los padres para mejorar la convivencia y apoyar el bienestar de toda la familia.
         </p>
+        <img src="img/psicologia.jpg">
     </section>
+
+        <!-- Descripción -->
+    <section class="intro">
+        <h2>Orientación Inicial en Psicología Infantil</h2>
+        <p>Responde estas preguntas para recibir una recomendación personalizada sobre la especialidad de psicología más adecuada.</p>
+    </section>
+
+    <section class="contenedor">
+        <h2>Cuestionario Inicial</h2>
+
+        <!-- P1 -->
+        <div class="pregunta">
+            <p>1. ¿Cómo se relaciona tu hijo con otros niños?</p>
+            <label><input type="radio" name="p1" value="infantil"> Se pelea o se aísla</label>
+            <label><input type="radio" name="p1" value="neuro"> Tiene dificultad para mantener la atención</label>
+            <label><input type="radio" name="p1" value="lenguaje"> No se comunica bien</label>
+        </div>
+
+        <!-- P2 -->
+        <div class="pregunta">
+            <p>2. ¿Tiene dificultades para seguir instrucciones?</p>
+            <label><input type="radio" name="p2" value="psicope"> Sí, seguido</label>
+            <label><input type="radio" name="p2" value="infantil"> A veces</label>
+        </div>
+
+        <!-- P3 -->
+        <div class="pregunta">
+            <p>3. ¿Presenta problemas en el habla o pronunciación?</p>
+            <label><input type="radio" name="p3" value="lenguaje"> Sí</label>
+            <label><input type="radio" name="p3" value="neuro"> No, pero tiene dificultad para recordar cosas</label>
+        </div>
+
+        <button id="consultar">Consultar Especialidad</button>
+
+    </section>
+
+    <!-- Resultado -->
+    <section id="resultado" class="resultado" style="display: none;">
+        <h2>Resultado de la Orientación</h2>
+        <p id="resultado-texto"></p>
+
+        <a href="#" class="btn" target="_blank">Agendar Cita</a>
+    </section>
+
+
     <footer>
         <p><h6>&copy; 2025 EduStim. Todos los derechos reservados</h6></p>
     </footer>    
 
+    <!-- Script -->
+    <script src="js/psicoTest.js"></script>
+    <script src="js/interacction.js"></script>
 </body>
 </html>
